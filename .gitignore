@@ -1,0 +1,16 @@
+# Ignorar los módulos de node
+node_modules/
+
+# Ignorar archivos de configuración de entorno
+.env
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos temporales
+tmp/
+.DS_Store
+
+# Ignorar los archivos de configuración de npm
+package.json
+package-lock.json

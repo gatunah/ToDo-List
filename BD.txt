@@ -1,0 +1,14 @@
+-- Borrar la Base de Datos si Existe
+DROP DATABASE IF EXISTS todo_list;
+
+-- Crear la Base de Datos
+CREATE DATABASE todo_list;
+
+-- Conectarse a la Base de Datos
+\c todo_list;
+
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE
+);
